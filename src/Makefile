@@ -159,6 +159,9 @@ all:
 
 doitall: $(TARGET)
 
+install:
+	@install -m 0775 ../bin/*/bbcp /usr/local/sbin
+
 clean:
 	@make cleanall OSVER=`../MakeSname`
 
